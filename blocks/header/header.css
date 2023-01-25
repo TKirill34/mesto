@@ -3,7 +3,7 @@
 	margin: 45px auto 0;
 }
 
-@media (max-width: 330px) {
+@media (max-width: 650px) {
 	.header {
 		margin: 28px 0 0;
 	}
