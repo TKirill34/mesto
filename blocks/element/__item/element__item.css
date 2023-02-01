@@ -1,0 +1,8 @@
+.element__item {
+	cursor: pointer;
+}
+
+.element__item:hover {
+	opacity: 0.5;
+	transition: opacity 0.5s ease;
+}
