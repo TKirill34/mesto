@@ -75,13 +75,14 @@
 	<section class="popup">
 		<div class="popup__container">
 			<button class="popup__close"></button>
-			<h2 class="popup__header">Редактировать профиль</h2>
-			<p class="popup__profile-name">Жак-Ив Кусто</p>
-			<p class="popup__profile-profession">Исследователь океана</p>
-			<button class="popup__submit">Сохранить</button>
+			<form class="popup__form" action="" method="get">
+				<h2 class="popup__header">Редактировать профиль</h2>
+				<input class="popup__profile-name" type="text" maxlength="12" required>
+				<input class="popup__profile-profession" type="text" maxlength="30" required>
+				<button class="popup__submit" type="submit">Сохранить</button>
+			</form>
 		</div>
 	</section>
-
 	<script src="./scripts/index.js"></script>
 </body>
 </html>
