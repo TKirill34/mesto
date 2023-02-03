@@ -4,7 +4,7 @@
 	padding: 0;
 	background-image: url(../../../images/Add\ Button.png);
 	background-color: #000000;
-	border: 0 solid #FFFFFF;
+	border: none;
 	position: absolute;
   right: 0;
   top: 35px;

@@ -14,53 +14,53 @@
 		<img class="header__logo" alt="Логотип страницы" src="./images/logo.svg">
 	</header>
 	<main class="content">
-		<section class="profile">
+		<section class="profile" aria-label="Информация о профиле">
 			<img class="profile__avatar" alt="Аватар" src="./images/Profile_image.jpg">
-			<div class="profile__info" aria-label="Информация о профиле">
-				<p class="profile__name">Жак-Ив Кусто</p>
+			<div class="profile__info">
+				<h1 class="profile__name">Жак-Ив Кусто</h1>
 				<p class="profile__profession">Исследователь океана</p>
 				<button class="profile__edit-button"></button>
 			</div>
 			<button class="profile__add-button"></button>
 		</section>
 		<section class="elements" aria-label="Карточки с картинками"> 
-			<article class="element">
+			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Сооружение из белого кирпича в горах" src="./images/Karachaevsk.jpg">
 				<div class="element__info">
 					<p class="element__name">Карачаевск</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
 				</div>
 			</article>
-			<article class="element">
+			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Человек стоит на фоне горы Эльбрус" src="./images/Elbrus.jpg">
 				<div class="element__info">
 					<p class="element__name">Гора Эльбрус</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
 				</div>
 			</article>
-			<article class="element">
+			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Дорога-серпантин ведущая в горы" src="./images/Dombai.jpg">
 				<div class="element__info">
 					<p class="element__name">Домбай</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
 				</div>
 			</article>
-			<article class="element">
+			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Пирамиды Гизы вблизи" src="./images/Giza.jpg">
 				<div class="element__info">
 					<p class="element__name">Пирамиды Гизы</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
 				</div>
 			</article>
-			<article class="element">
-				<img class="element__foto" alt="Статуя Свободы крупным планом" src="./images/State of Liberty.jpg">
+			<article class="element" aria-label="Карточка">
+				<img class="element__foto" alt="Статуя Свободы крупным планом" src="./images/State_of_Liberty.jpg">
 				<div class="element__info">
 					<p class="element__name">Статуя Свободы</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
 				</div>
 			</article>
-			<article class="element">
-				<img class="element__foto" alt="Сакура цветёт на заднем фоне здание-башня в японском стиле" src="./images/Japan sakura.jpg">
+			<article class="element" aria-label="Карточка">
+				<img class="element__foto" alt="Сакура цветёт на заднем фоне здание-башня в японском стиле" src="./images/Japan_Sakura.jpg">
 				<div class="element__info">
 					<p class="element__name">Цветение сакуры</p>
 					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
@@ -71,5 +71,17 @@
 	<footer class="footer">
 		<p class="footer__text">&copy; 2023 Mesto Russia</p>
 	</footer>
+
+	<section class="popup">
+		<div class="popup__container">
+			<button class="popup__close"></button>
+			<h2 class="popup__header">Редактировать профиль</h2>
+			<p class="popup__profile-name">Жак-Ив Кусто</p>
+			<p class="popup__profile-profession">Исследователь океана</p>
+			<button class="popup__submit">Сохранить</button>
+		</div>
+	</section>
+
+	<script src="./scripts/index.js"></script>
 </body>
 </html>

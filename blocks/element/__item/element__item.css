@@ -6,3 +6,9 @@
 	opacity: 0.5;
 	transition: opacity 0.5s ease;
 }
+
+.element__item:active {
+	background-image: url(../../../images/Union.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
