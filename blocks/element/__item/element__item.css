@@ -1,5 +1,9 @@
 .element__item {
 	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	margin-right: 5px;
 }
 
 .element__item:hover {

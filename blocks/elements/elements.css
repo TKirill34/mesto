@@ -12,7 +12,7 @@
 	.elements {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
-		margin: 0 19px 48px;
+		margin: 0 19px 50px;
 	}
 }
 

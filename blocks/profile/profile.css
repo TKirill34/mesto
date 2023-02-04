@@ -1,11 +1,12 @@
 .profile {
 	max-width: 880px;
-	margin: 0 auto 50px;
+	margin: 0 auto 45px;
 	display: flex;
-	position: relative;
+	justify-content: space-between;
+	padding: 0 15px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
 	.profile {
 		max-width: 100%;
 		margin: 0 19px 36px;

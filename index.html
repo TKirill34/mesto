@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Кирилл Торопов">
-  <meta name="description" content="Сервис Mesto: интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки, создается базовыми навыками html/css/javascript">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Адаптивная вёрстка, Yandex Практикум">
+	<meta name="description"
+		content="Сервис Mesto: интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки, создается базовыми навыками html/css/javascript">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Адаптивная вёрстка, Yandex Практикум">
 	<link rel="stylesheet" href="./pages/index.css">
 	<title>Cервис Mesto: интерактивная страница</title>
 </head>
+
 <body class="page">
 	<header class="header">
 		<img class="header__logo" alt="Логотип страницы" src="./images/logo.svg">
 	</header>
 	<main class="content">
 		<section class="profile" aria-label="Информация о профиле">
-			<img class="profile__avatar" alt="Аватар" src="./images/Profile_image.jpg">
-			<div class="profile__info">
-				<h1 class="profile__name">Жак-Ив Кусто</h1>
-				<p class="profile__profession">Исследователь океана</p>
-				<button class="profile__edit-button"></button>
+			<div class="profile__container">
+				<img class="profile__avatar" alt="Аватар" src="./images/Profile_image.jpg">
+				<div class="profile__info">
+					<h1 class="profile__name">Жак-Ив Кусто</h1>
+					<button type="button" aria-label="Редактировать профиль" class="profile__edit-button"></button>
+					<p class="profile__profession">Исследователь океана</p>
+				</div>
 			</div>
-			<button class="profile__add-button"></button>
+			<button type="button" aria-label="Добавить карточку" class="profile__add-button"></button>
 		</section>
-		<section class="elements" aria-label="Карточки с картинками"> 
+		<section class="elements" aria-label="Карточки с картинками">
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Сооружение из белого кирпича в горах" src="./images/Karachaevsk.jpg">
 				<div class="element__info">
-					<p class="element__name">Карачаевск</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Карачаевск</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Человек стоит на фоне горы Эльбрус" src="./images/Elbrus.jpg">
 				<div class="element__info">
-					<p class="element__name">Гора Эльбрус</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Гора Эльбрус</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Дорога-серпантин ведущая в горы" src="./images/Dombai.jpg">
 				<div class="element__info">
-					<p class="element__name">Домбай</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Домбай</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Пирамиды Гизы вблизи" src="./images/Giza.jpg">
 				<div class="element__info">
-					<p class="element__name">Пирамиды Гизы</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Пирамиды Гизы</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Статуя Свободы крупным планом" src="./images/State_of_Liberty.jpg">
 				<div class="element__info">
-					<p class="element__name">Статуя Свободы</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Статуя Свободы</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 			<article class="element" aria-label="Карточка">
-				<img class="element__foto" alt="Сакура цветёт на заднем фоне здание-башня в японском стиле" src="./images/Japan_Sakura.jpg">
+				<img class="element__foto" alt="Сакура цветёт на заднем фоне здание-башня в японском стиле"
+					src="./images/Japan_Sakura.jpg">
 				<div class="element__info">
-					<p class="element__name">Цветение сакуры</p>
-					<img class="element__item" alt="Знак лайка" src="./images/Vector.svg">
+					<h2 class="element__name">Цветение сакуры</h2>
+					<button type="button" aria-label="Поставить лайк" class="element__item"><img alt="Знак лайка"
+							src="./images/Vector.svg"></button>
 				</div>
 			</article>
 		</section>
@@ -74,15 +86,16 @@
 
 	<section class="popup">
 		<div class="popup__container">
-			<button class="popup__close"></button>
-			<form class="popup__form" action="" method="get">
-				<h2 class="popup__header">Редактировать профиль</h2>
-				<input class="popup__profile-name" type="text" maxlength="12" required>
-				<input class="popup__profile-profession" type="text" maxlength="30" required>
+			<button type="button" aria-label="Закрыть форму" class="popup__close"></button>
+			<form class="popup__form" name="popupForm" action="./scripts/index.js" method="get">
+				<h3 class="popup__header">Редактировать профиль</h3>
+				<input class="popup__input popup__input_profile_name" name="popupName" type="text" required>
+				<input class="popup__input popup__input_profile_profession" name="popupProfession" type="text" required>
 				<button class="popup__submit" type="submit">Сохранить</button>
 			</form>
 		</div>
 	</section>
 	<script src="./scripts/index.js"></script>
 </body>
+
 </html>
