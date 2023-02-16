@@ -1,0 +1,6 @@
+.popup-image__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0;
+}

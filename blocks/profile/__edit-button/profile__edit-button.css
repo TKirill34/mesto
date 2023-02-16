@@ -1,12 +1,12 @@
 .profile__edit-button {
-	width: 24px;
+	min-width: 24px;
 	height: 24px;
 	background-image: url(../../../images/Edit\ Button.svg);
 	background-color: transparent;
+	background-repeat: no-repeat;
 	border: none;
 	padding: 0;
 	margin-top: 15px;
-	margin-left: 18px;
 	order: 2;
 	cursor: pointer;
 }
@@ -18,10 +18,9 @@
 
 @media (max-width: 670px) {
 	.profile__edit-button {
-		width: 18px;
+		min-width: 18px;
 		height: 18px;
 		background-image: url(../../../images/Edit\ Button_mobile.svg);
 		margin-top: 8px;
-		margin-left: 10px;
 	}
 }

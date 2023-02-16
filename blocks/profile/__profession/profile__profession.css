@@ -1,10 +1,8 @@
 .profile__profession {
-	max-width: 336px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 122%;
 	margin: 10px 0 0;
-	order: 3;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -12,7 +10,6 @@
 
 @media (max-width: 670px) {
 	.profile__profession {
-		max-width: 282px;
 		font-size: 14px;
 		line-height: 121%;
 	}

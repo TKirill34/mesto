@@ -1,5 +1,5 @@
 .element__name {
-	max-width: 210px;
+	max-width: 85%;
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 120%;
@@ -8,16 +8,4 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}
-
-@media (max-width: 890px) {
-	.element__name {
-		max-width: 350px;
-	}
-}
-
-@media (max-width: 350px) {
-	.element__name {
-		max-width: 210px;
-	}
 }
