@@ -73,6 +73,7 @@ const handleOpenImageCard = (evt) => {
 	evt.preventDefault();
 	openPopup(popupImages);
 	imagesCard.src = evt.target.closest('.element__foto').src;
+	imagesCard.alt = evt.target.closest('.element').textContent;
 	imagesCardName.textContent = evt.target.closest('.element').textContent;
 }
 
@@ -84,14 +85,14 @@ const handleAddButtonClick = () => {
 	openPopup(popupAddCard);
 }
 
-const AddNewCard = (item, container) => {
+const addNewCard = (item, container) => {
 	const newAddCardElement = createCard(item);
 	container.prepend(newAddCardElement);
 }
 
 function handleAddNewCardFormSubmit(evt) {
 	evt.preventDefault();
-	AddNewCard((item = {
+	addNewCard((item = {
 		name: addCardNameInput.value,
 		link: addCardLinkInput.value
 	}),
