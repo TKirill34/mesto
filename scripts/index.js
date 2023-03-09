@@ -1,29 +1,3 @@
-const initialCards = [
-	{
-		name: 'Карачаево-Черкесия',
-		link: 'https://images.unsplash.com/photo-1588584922681-745a2223f72c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80'
-	},
-	{
-		name: 'Гора Эльбрус',
-		link: 'https://images.unsplash.com/photo-1638989420853-a6437f7a0d2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80'
-	},
-	{
-		name: 'Домбай',
-		link: 'https://images.unsplash.com/photo-1617911478446-c7f1dd96966e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
-	},
-	{
-		name: 'Пирамиды Гизы',
-		link: 'https://images.unsplash.com/photo-1544815521-80841127c00f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1809&q=80'
-	},
-	{
-		name: 'Статуя Свободы',
-		link: 'https://images.unsplash.com/photo-1618494273308-8b6c35ca8a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-	},
-	{
-		name: 'Япония',
-		link: 'https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80'
-	}
-];
 const editProfileButton = document.querySelector(".profile__edit-button");
 const popupProfile = document.querySelector(".popup-profile");
 const formProfile = popupProfile.querySelector(".popup__form-profile");
@@ -45,16 +19,36 @@ const elementTemplate = document.getElementById('element').content;
 
 function openPopup(popup) {
 	popup.classList.add('popup_opened');
+
+	popup.addEventListener('click', closePopupClick);
+	window.addEventListener('keydown', closePopupEscape);
 }
 
 function closePopup(popup) {
 	popup.classList.remove('popup_opened');
+
+	popup.removeEventListener('click', closePopupClick);
+	window.removeEventListener('keydown', closePopupEscape);
 }
 
 closeButtons.forEach((button) => {
 	const popup = button.closest('.popup');
 	button.addEventListener('click', () => closePopup(popup));
 });
+
+function closePopupClick(evt) {
+	if (!evt.target.closest('.overlay')) {
+		const popupOpened = document.querySelector('.popup_opened');
+		closePopup(popupOpened);
+	}
+}
+
+function closePopupEscape(evt) {
+	if (evt.key === 'Escape') {
+		const popupOpened = document.querySelector('.popup_opened');
+		closePopup(popupOpened);
+	}
+}
 
 const handleEditButtonClick = () => {
 	profileNameInput.value = profileName.textContent;
