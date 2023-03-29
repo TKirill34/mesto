@@ -29,8 +29,9 @@
 			<button type="button" aria-label="Добавить карточку" class="profile__add-button"></button>
 		</section>
 		<section class="elements" aria-label="Карточки с картинками">
+
 		</section>
-		<template id="element">
+		<template id="template-element">
 			<article class="element" aria-label="Карточка">
 				<img class="element__foto" alt="Фото карточки" src="#">
 				<button type="button" aria-label="Удалить карточку" class="element__trash"></button>
@@ -42,7 +43,7 @@
 		</template>
 	</main>
 	<footer class="footer">
-		<p class="footer__text">&copy; 2023 Mesto Russia</p>
+		<p class="footer__text">&copy; 2023 Mesto Russia by Toropov Kirill</p>
 	</footer>
 
 	<section class="popup popup-profile">
@@ -54,14 +55,14 @@
 				<div class="popup__form-container">
 					<input class="popup__input popup__input_profile_name" name="popupName" id="nameInput" type="text" required
 						minlength="2" maxlength="40">
-					<span class="popup__message-error"></span>
+					<span class="popup__message-error nameInput-error"></span>
 				</div>
 				<div class="popup__form-container">
 					<input class="popup__input popup__input_profile_profession" name="popupProfession" id="professionInput"
 						type="text" required minlength="2" maxlength="200">
-					<span class="popup__message-error"></span>
+					<span class="popup__message-error professionInput-error"></span>
 				</div>
-				<button class="popup__submit popup__submit-profile popup__submit_disabled" type="submit">Сохранить</button>
+				<button class="popup__submit popup__submit-profile" type="submit">Сохранить</button>
 			</form>
 		</div>
 	</section>
@@ -75,14 +76,14 @@
 				<div class="popup__form-container">
 					<input class="popup__input popup__input_add-name" name="popupNameAdd" id="titleInput" type="text"
 						placeholder="Название" required minlength="2" maxlength="30">
-					<span class="popup__message-error"></span>
+					<span class="popup__message-error titleInput-error"></span>
 				</div>
 				<div class="popup__form-container">
 					<input class="popup__input popup__input_add-foto" name="popupLinkAdd" id="linkInput" type="url"
 						placeholder="Ссылка на картинку" required>
-					<span class="popup__message-error"></span>
+					<span class="popup__message-error linkInput-error"></span>
 				</div>
-				<button class="popup__submit popup__submit_add-card popup__submit_disabled" type="submit">Создать</button>
+				<button class="popup__submit popup__submit_add-card" type="submit">Создать</button>
 			</form>
 		</div>
 	</section>
@@ -95,9 +96,7 @@
 		</div>
 	</section>
 
-	<script src="./scripts/cards.js"></script>
-	<script src="./scripts/validate.js"></script>
-	<script src="./scripts/index.js"></script>
+	<script src="./scripts/index.js" type="module"></script>
 </body>
 
 </html>
