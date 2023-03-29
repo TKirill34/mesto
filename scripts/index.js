@@ -84,7 +84,7 @@ function addNewCard(evt) {
 	evt.preventDefault();
 	const newCard = createCard(addCardNameInput.value, addCardLinkInput.value, '#template-element', openPopup);
 	const formValidator = new FormValidator(validationOptions, formAddCard);
-	formValidator.disableSubmitButton();
+	formValidator.disableButton();
 	elementCards.prepend(newCard);
 	formAddCard.reset();
 	closePopup(popupAddCard);
