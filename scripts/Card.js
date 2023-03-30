@@ -1,6 +1,4 @@
-const popupImages = document.querySelector('.popup-image');
-const imagesCard = popupImages.querySelector('.popup-image__foto');
-const imagesCardName = popupImages.querySelector('.popup-image__name');
+import { popupImage, imageCard, imageCardName } from './index.js';
 
 class Card {
 	constructor(name, link, templateSelector, openPopup) {
@@ -33,10 +31,10 @@ class Card {
 	}
 
 	_handlePictureView() {
-		this._openPopup(popupImages);
-		imagesCard.src = this._link;
-		imagesCard.alt = this._name;
-		imagesCardName.textContent = this._name;
+		this._openPopup(popupImage);
+		imageCard.src = this._link;
+		imageCard.alt = this._name;
+		imageCardName.textContent = this._name;
 	}
 
 	_handlePictureLike() {

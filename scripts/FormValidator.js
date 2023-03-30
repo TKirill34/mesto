@@ -29,6 +29,12 @@ class FormValidator {
 		errorElement.textContent = '';
 	}
 
+	hiddenAllErrors() {
+		this._inputList.forEach((inputElement) => {
+			this._hideInputError(inputElement);
+		});
+	}
+
 	_checkValidity(inputElement) {
 		if (!inputElement.validity.valid) {
 			this._showInputError(inputElement);
